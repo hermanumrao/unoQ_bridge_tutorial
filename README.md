@@ -96,7 +96,6 @@ int get_distance() {
 }
 
 void setup() {
-  Serial.begin(9600);
   pinMode(trigPin, OUTPUT);
   pinMode(echoPin, INPUT);
 
@@ -119,10 +118,6 @@ void loop() {
   
   duration = pulseIn(echoPin, HIGH);
   distance = duration * 0.034 / 2;
-  
-  Serial.print("Distance: ");
-  Serial.print(distance);
-  Serial.println(" cm");
   
   delay(500);
 }
@@ -199,7 +194,6 @@ int get_distance() {
 }
 
 void setup() {
-  Serial.begin(9600);
   pinMode(trigPin, OUTPUT);
   pinMode(echoPin, INPUT);
 
@@ -219,10 +213,6 @@ void loop() {
   
   duration = pulseIn(echoPin, HIGH);
   distance = duration * 0.034 / 2;
-  
-  Serial.print("Distance: ");
-  Serial.print(distance);
-  Serial.println(" cm");
   
   delay(500);
 }
